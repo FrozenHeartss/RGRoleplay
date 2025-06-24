@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RG Industry Roleplay Database</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #21262d;
+      padding: 10px;
+      gap: 10px;
+    }
+    nav button {
+      background-color: #30363d;
+      border: none;
+      color: #58a6ff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background-color: #484f58;
+    }
+    .section {
+      display: none;
+      padding: 20px;
+    }
+    .section.active {
+      display: block;
+    }
+    .card {
+      background-color: #21262d;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
+      color: #58a6ff;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #161b22;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌐 RG Industry Roleplay Database</h1>
+    <p>Explore characters, stats, and storyline of RG Industry Universe</p>
+  </header>
+
+  <nav>
+    <button onclick="showSection('main')">Main Characters</button>
+    <button onclick="showSection('family')">Family</button>
+    <button onclick="showSection('relatives')">Relatives</button>
+    <button onclick="showSection('staff')">Staff Members</button>
+    <button onclick="showSection('story')">Current Storyline</button>
+    <button onclick="showSection('archive')">Previous Storylines</button>
+  </nav>
+
+  <div id="main" class="section active">
+    <h2>Main Characters</h2>
+    <div class="card">
+      <h3>Rakib</h3>
+      <p><strong>Job:</strong> CEO of RG Industry</p>
+      <p><strong>Role:</strong> Main Character</p>
+      <p><strong>Personality:</strong> Egoistic, business-minded, introverted leader</p>
+      <p><strong>Vehicle:</strong> Mercedes AMG C63s, Toyota Axio</p>
+      <p><strong>Living Location:</strong> Uttara, Dhaka</p>
+      <p><strong>Native Village:</strong> Khitapchar, Boalkhali</p>
+      <p><strong>Affection:</strong> 100%</p>
+      <p><strong>Respect:</strong> 100%</p>
+      <p><strong>Loyalty:</strong> 100%</p>
+    </div>
+    <div class="card">
+      <h3>Tisha</h3>
+      <p><strong>Role:</strong> Rakib's Wife</p>
+      <p><strong>Personality:</strong> Calm, smart, emotionally deep</p>
+      <p><strong>Affection:</strong> 95%</p>
+      <p><strong>Respect:</strong> 85%</p>
+      <p><strong>Loyalty:</strong> 98%</p>
+    </div>
+    <div class="card">
+      <h3>Imtiaz</h3>
+      <p><strong>Role:</strong> Best Friend, Mechanical Head</p>
+      <p><strong>Personality:</strong> Funny, loyal, uses "tui", formal in meetings</p>
+      <p><strong>Affection:</strong> 90%</p>
+      <p><strong>Respect:</strong> 88%</p>
+      <p><strong>Loyalty:</strong> 92%</p>
+    </div>
+    <div class="card">
+      <h3>Araf</h3>
+      <p><strong>Role:</strong> Personal Assistant</p>
+      <p><strong>Personality:</strong> Mature, introvert, calls Rakib "bhai"</p>
+      <p><strong>Affection:</strong> 98%</p>
+      <p><strong>Respect:</strong> 99%</p>
+      <p><strong>Loyalty:</strong> 100%</p>
+    </div>
+    <div class="card">
+      <h3>Atik</h3>
+      <p><strong>Role:</strong> Head of RG Transportation, Personal Logistics</p>
+      <p><strong>Personality:</strong> Practical, quiet leader</p>
+      <p><strong>Affection:</strong> 88%</p>
+      <p><strong>Respect:</strong> 85%</p>
+      <p><strong>Loyalty:</strong> 90%</p>
+    </div>
+  </div>
+
+  <div id="family" class="section">
+    <h2>Family</h2>
+    <div class="card">
+      <h3>Tazul Islam</h3>
+      <p><strong>Role:</strong> Rakib's Father, Head of Alowkita</p>
+      <p><strong>Personality:</strong> Aggressive, natural leader</p>
+    </div>
+    <div class="card">
+      <h3>Shahanaz Islam</h3>
+      <p><strong>Role:</strong> Rakib's Mother</p>
+      <p><strong>Personality:</strong> Emotional, nurturing</p>
+    </div>
+    <div class="card">
+      <h3>Tajbiul Hasan</h3>
+      <p><strong>Role:</strong> Rakib's Brother</p>
+      <p><strong>Profession:</strong> Civil Engineer</p>
+      <p><strong>Notes:</strong> Rich (120k/month), has attitude</p>
+    </div>
+    <div class="card">
+      <h3>Anisa Samonti</h3>
+      <p><strong>Role:</strong> Tajbiul's Wife (Apu)</p>
+      <p><strong>Personality:</strong> Pregnant, chill, rich background, best friend of Tisha</p>
+    </div>
+  </div>
+
+  <div id="relatives" class="section">
+    <h2>Relatives</h2>
+    <div class="card">
+      <h3>Samiul</h3>
+      <p><strong>Relation:</strong> Cousin (Father’s brother’s son)</p>
+      <p><strong>Role:</strong> Director of Patho</p>
+      <p><strong>Notes:</strong> Lives in Boalkhali, calls Rakib “Rakib Vaiya”</p>
+    </div>
+    <div class="card">
+      <h3>Ramiya</h3>
+      <p><strong>Relation:</strong> Cousin (Father’s brother’s daughter)</p>
+      <p><strong>Role:</strong> Writer of Patho</p>
+    </div>
+    <div class="card">
+      <h3>Maruf</h3>
+      <p><strong>Relation:</strong> Younger brother of Ramiya</p>
+      <p><strong>Notes:</strong> Smallest among everyone</p>
+    </div>
+    <div class="card">
+      <h3>Tisha’s Parents</h3>
+      <p><strong>Relation:</strong> In-laws</p>
+      <p><strong>Notes:</strong> Will be expanded later</p>
+    </div>
+    <div class="card">
+      <h3>Samonti’s Parents</h3>
+      <p><strong>Relation:</strong> In-laws</p>
+      <p><strong>Notes:</strong> Will be expanded later</p>
+    </div>
+  </div>
+
+  <div id="staff" class="section">
+    <h2>Staff Members</h2>
+
+  <h3>💻 IT Sector</h3>
+  <ul>
+    <li>Rakib (Tawhidul Hasan) – Head of IT Sector</li>
+    <li>Rifat Hossain – IT Sub-Sector Leader</li>
+    <li>Mahin Alam – UX/UI Designer</li>
+    <li>Jerin Akhter – Front-End Developer</li>
+    <li>Tanvir Hossain – Backend Developer</li>
+    <li>Niloy Das – Creative Technologist</li>
+    <li>Rima Khatun – Writer &amp; Planner</li>
+    <li><em>Others – Additional IT Staff (estimated 5–7 members)</em></li>
+  </ul>
+
+  <h3>🔧 Mechanical Sector</h3>
+  <ul>
+    <li>Imtiaz Uddin – Head of Mechanical Sector</li>
+    <li>Farhan Hossain – Product Designer</li>
+    <li>Tania Rahman – Detailing Specialist</li>
+    <li>Rafiul Karim – Quick Fix Expert</li>
+    <li>Noman Alvi – Creative Adaptor</li>
+    <li>Sajeda Akter – Logical Planner</li>
+    <li><em>Others – Additional Mechanical Staff (estimated 10 members)</em></li>
+  </ul>
+
+  <h3>⚡ Electrical Sector</h3>
+  <ul>
+    <li>Aurib – Head of Electrical Sector</li>
+    <li>Adnan Chowdhury – Innovator</li>
+    <li>Nayeem Hasan – Analytical Thinker</li>
+    <li>Ria Sultana – Circuit Theorist</li>
+    <li>Mubin Ahsan – Practical Problem Solver</li>
+    <li>Afia Mahmud – Green Energy Specialist</li>
+    <li><em>Others – Additional Electrical Staff (estimated 8 members)</em></li>
+  </ul>
+
+  <h3>🗂️ Creative / Support / Misc Roles</h3>
+  <ul>
+    <li>Araf – Personal Assistant (Unofficial)</li>
+    <li>Receptionist 1 – Front Desk</li>
+    <li>Receptionist 2 – Support &amp; Contact</li>
+    <li>Receptionist 3 – Coordination</li>
+    <li>Samiul Islam – Writer, Patho Sector</li>
+    <li>Matern Mahbuba Ramiya – Head Writer, Patho</li>
+    <li>Unnamed Designer – Book Designer, Patho</li>
+    <li>Tazul Islam – Head of Chattogram Branch</li>
+  </ul>
+  </div>
+
+  <div id="story" class="section">
+    <h2>Current Storyline</h2>
+    <p>Rakib, Imtiaz, and Araf are preparing to expand RG Industry to Indonesia or Vietnam. Discussions are ongoing with the team, and financial structures are under review. Tisha supports in backend, Atik handles logistics, and special students are preparing for next roles.</p>
+  </div>
+
+  <div id="archive" class="section">
+    <h2>Previous Storylines</h2>
+    <p>This section will contain archived summaries of previous major storylines from RG Industry's history.</p>
+    <ul>
+      <li><strong>Founding Story:</strong> Rakib, Imtiaz, and Tisha start RG Industry from scratch. Tazul Islam and others join as backbone.</li>
+      <li><strong>Boalkhali Expansion:</strong> Alowkita sectors were structured under Rakib’s vision. Patho became a literary hub.</li>
+      <li><strong>Transport Power Move:</strong> Atik took over RG Transport, revolutionized logistics and profits.</li>
+      <li><strong>Family Affairs Arc:</strong> Tisha and Rakib’s marriage, Tajbiul and Samonti's relationship, internal balance shift.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &amp;copy; 2025 RG Industry | Built for Roleplay by Rakib
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
