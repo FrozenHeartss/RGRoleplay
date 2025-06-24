@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RG Industry Roleplay Database</title>
   <style>
     body {
@@ -81,6 +81,7 @@
     <button onclick="showSection('staff')">Staff Members</button>
     <button onclick="showSection('story')">Current Storyline</button>
     <button onclick="showSection('archive')">Previous Storylines</button>
+    <button onclick="showSection('company')">Company Rules</button>
   </nav>
 
   <div id="main" class="section active">
@@ -251,9 +252,126 @@
       <li><strong>Family Affairs Arc:</strong> Tisha and Rakib’s marriage, Tajbiul and Samonti's relationship, internal balance shift.</li>
     </ul>
   </div>
+  
+  <div id="company" class="section">
+    <h2>📈 Annual Income from Sectors to Main Industry</h2>
+    <div class="grid-columns">
+      <div class="column-box">
+        <h3>Main Industry (RG Industry)</h3>
+        <ul>
+          <li>🖥️ IT Sector: BDT 129,600/year</li>
+          <li>⚡ Electrical Sector: BDT 194,400/year</li>
+          <li>🔧 Mechanical Sector: BDT 345,600/year</li>
+          <li>📰 Alowkita Sector: BDT 180,000/year</li>
+          <li><strong>Total: BDT 849,600/year</strong></li>
+        </ul>
+      </div>
+      <div class="column-box">
+        <h3>Fund Collection Bank</h3>
+        <ul>
+          <li>🖥️ IT: BDT 32,400/year</li>
+          <li>⚡ Electrical: BDT 48,600/year</li>
+          <li>🔧 Mechanical: BDT 86,400/year</li>
+          <li>📰 Alowkita: BDT 45,000/year</li>
+          <li><strong>Total: BDT 212,400/year</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>📊 Monthly Financial Summary</h2>
+    <table>
+      <tr>
+        <th>Sector</th>
+        <th>Profit</th>
+        <th>Head 10%</th>
+        <th>Salary Pool</th>
+        <th>Leaders</th>
+        <th>Staff</th>
+        <th>Head Salary</th>
+        <th>Sector Bank</th>
+      </tr>
+      <tr>
+        <td>🖥️ IT</td>
+        <td>270,000</td>
+        <td>27,000</td>
+        <td>135,000</td>
+        <td>39,000</td>
+        <td>84,000</td>
+        <td>12,000</td>
+        <td>81,000</td>
+      </tr>
+      <tr>
+        <td>⚡ Electrical</td>
+        <td>405,000</td>
+        <td>40,500</td>
+        <td>202,500</td>
+        <td>48,000</td>
+        <td>129,000</td>
+        <td>25,500</td>
+        <td>162,000</td>
+      </tr>
+      <tr>
+        <td>🔧 Mechanical</td>
+        <td>720,000</td>
+        <td>72,000</td>
+        <td>360,000</td>
+        <td>54,000</td>
+        <td>273,000</td>
+        <td>33,000</td>
+        <td>288,000</td>
+      </tr>
+      <tr>
+        <td>🚛 Transportation</td>
+        <td>600,000</td>
+        <td>60,000</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>540,000</td>
+      </tr>
+      <tr>
+        <td>📰 Alowkita</td>
+        <td>375,000</td>
+        <td>37,500</td>
+        <td>187,500</td>
+        <td>84,000</td>
+        <td>90,000</td>
+        <td>13,500</td>
+        <td>43,500</td>
+      </tr>
+      <tr>
+        <th>Total</th>
+        <th>2,370,000</th>
+        <th>237,000</th>
+        <th>885,000</th>
+        <th>225,000</th>
+        <th>576,000</th>
+        <th>84,000</th>
+        <th>1,114,500</th>
+      </tr>
+    </table>
+
+    <h2>📄 Rule 1: Income Sharing System</h2>
+    <p>Every sector under RG Industry follows this distribution model monthly:</p>
+    <ul>
+      <li><strong>10%</strong> of total monthly profit is received by the <strong>Sector Head</strong> (e.g., Rakib, Imtiaz, Aurib)</li>
+      <li>The remaining <strong>90%</strong> is split as follows:</li>
+      <ul>
+        <li><strong>50%</strong> of total profit is allocated to the <strong>Salary Pool</strong></li>
+        <li>From the other <strong>50%</strong>:
+          <ul>
+            <li><strong>8%</strong> to Main Industry (RG Industry)</li>
+            <li><strong>2%</strong> to Fund Collection Bank</li>
+            <li><strong>40%</strong> to Sector Bank (savings/internal development)</li>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+  </div>
 
   <footer>
-    &amp;copy; 2025 RG Industry | Built for Roleplay by Rakib
+    &copy; 2025 RG Industry | Built for Roleplay by Rakib
   </footer>
 
   <script>
